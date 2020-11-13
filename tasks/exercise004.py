@@ -17,8 +17,3 @@ def pig_it(text):
         letter_new = letter_new + ' ' + new_word
     return letter_new.strip()
 
-text1 = 'Roses are lovely'
-print('\n Actual input text is:- {0} \n Updated text is:- {1} '.format(text1, pig_it(text1)))
-
-letter = ":ban,k !s 'not so 'open?"
-print('\n Actual input text is  {0} \n Updated text is: {1} '.format(letter, pig_it(letter)))
