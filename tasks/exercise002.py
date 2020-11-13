@@ -3,4 +3,8 @@
 # More examples in the test cases below.
 
 def past(h, m, s):
-    return
+    hour_milliseconds = h * 60 * 60 * 1000
+    minute_milliseconds = m * 60 * 1000
+    seconds_milliseconds = s * 1000
+    time_milliseconds = hour_milliseconds + minute_milliseconds + seconds_milliseconds
+    return time_milliseconds

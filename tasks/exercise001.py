@@ -6,4 +6,12 @@
 # Good luck!
 
 def repeats(arr):
-    return
+
+    unique = []
+    for i in arr:
+        if arr.count(i) > 1:
+            continue
+        else:
+            unique.append(i)
+    return sum(unique)
+
