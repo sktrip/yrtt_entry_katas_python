@@ -10,8 +10,6 @@ def pig_it(text):
             if word[0] in punctuation_marks:
                 new_word = word[0]+word[2:]+word[1:2]+'ay'
                 break
-            elif i in punctuation_marks:
-                new_word = word[1:]
             else:
                 new_word = word[1:] + word[0:1]
         letter_new = letter_new + ' ' + new_word
