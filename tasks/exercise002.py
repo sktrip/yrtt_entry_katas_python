@@ -8,3 +8,4 @@ def past(h, m, s):
     seconds_milliseconds = s * 1000
     time_milliseconds = hour_milliseconds + minute_milliseconds + seconds_milliseconds
     return time_milliseconds
+
