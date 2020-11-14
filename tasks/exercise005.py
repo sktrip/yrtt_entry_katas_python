@@ -19,4 +19,12 @@
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 def wave(people):
-    return
+    result = []
+    for i in range(0, len(people)):
+        if people[i] == ' ':
+            continue
+        else:
+            text = people[:i]+people[i].capitalize()+people[i+1:len(people)]
+            result.append(text)
+    return result
+
