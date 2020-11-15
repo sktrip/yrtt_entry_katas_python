@@ -34,7 +34,7 @@ def pig_it(text):
             letters_start = ''
         elif word[-1] in string.punctuation:
             x = punctuation_at_end(word)
-            word_punctuation = lambda a, b: word[1:x[0]+1]+word[0]+'ay'+x[1] if a ==b else ' '+word[1:x[0]+1]+word[0]+'ay'+x[1]
+            word_punctuation = lambda a, b: word[1:x[0]+1]+word[0]+'ay'+x[1] if a == b else ' '+word[1:x[0]+1]+word[0]+'ay'+x[1]
             end_punctuation = word_punctuation(word, first_word)
             new_text = new_text + end_punctuation
         else:
